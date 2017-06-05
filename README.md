@@ -1,4 +1,4 @@
-# Example of a nonblocing REST API using spring boot and java 8
+# Example of a non-blocking REST API using spring boot and java 8
 
 Simple example on how to implement a hassle free non blocking rest service with both Callable and DefferedResult 
 
