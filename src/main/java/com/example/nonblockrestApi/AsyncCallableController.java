@@ -30,6 +30,11 @@ public class AsyncCallableController {
 		return callable;
 	}
 
+	/**
+	 * what’s the difference from Callable? The difference is this time the
+	 * thread is managed by us. It is our responsibility to set the result of
+	 * the DeferredResult in a different thread.
+	 */
 	@RequestMapping(value = "/deferred", method = RequestMethod.GET, produces = "text/html")
 	public DeferredResult<String> executeSlowTaskDeferred() {
 		logger.info("Request received");
